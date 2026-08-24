@@ -1,0 +1,645 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::before {
+  content: "";
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  background-color: rgba(3, 2, 19, 0.1);
+  backdrop-filter: blur(20px);
+  height: 6em;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+.navbar .container {
+  padding: 0 5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .container a {
+  text-decoration: none;
+  color: white;
+}
+.navbar .container .logo img {
+  height: 4em;
+  margin-right: 0.2em;
+}
+.navbar .container .logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.navbar .container .logo a p {
+  color: white;
+  font-size: 1.7em;
+  font-weight: 400;
+}
+.navbar .container .menu img:hover {
+  cursor: pointer;
+}
+.navbar .container .nav-kanan .Sub-Menu {
+  margin: 0 0.8em;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 0.3em;
+  font-size: 1.2em;
+  font-weight: 200;
+}
+.navbar .container .nav-kanan .Sub-Menu:hover {
+  transition: 0.3s;
+  border-bottom: solid 1px whitesmoke;
+  padding-bottom: 0.5em;
+  font-weight: 500;
+  font-size: 1.123em;
+}
+
+.hidingMenu {
+  display: none !important;
+}
+
+.isi-menu {
+  background: rgba(193, 192, 192, 0.7);
+  backdrop-filter: blur(7px);
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  position: fixed;
+  justify-content: right;
+  display: flex;
+}
+.isi-menu .container {
+  background: linear-gradient(to bottom, #030213, #09046b);
+  width: 50%;
+  padding: 1em;
+}
+.isi-menu .container .logo {
+  display: flex;
+  border-bottom: solid 2px #ffffff;
+  justify-content: space-between;
+}
+.isi-menu .container .logo a {
+  display: flex;
+  text-decoration: none;
+  padding-bottom: 5px;
+  color: white;
+}
+.isi-menu .container .logo a p {
+  font-size: 1.2em;
+  margin-left: 10px;
+}
+.isi-menu .container .logo a img {
+  height: 4em;
+}
+.isi-menu .container ul {
+  padding-top: 1em;
+  padding: 0;
+}
+.isi-menu .container ul li {
+  padding: 1em 0;
+  list-style: none;
+}
+.isi-menu .container ul li a {
+  width: auto;
+  text-decoration: none;
+  color: white;
+  padding-left: 0.5em;
+  border-radius: 10px;
+  display: flex;
+}
+.isi-menu .container ul li a:hover {
+  transition: 0.5s;
+  padding-left: 1em;
+}
+.isi-menu .exit {
+  background-color: #030213;
+  height: 20px;
+  border-radius: 10px;
+  padding: 0.3em 0.5em;
+  padding-right: 1em;
+  margin-right: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.isi-menu .exit img:hover {
+  cursor: pointer;
+}
+.isi-menu .exit .exitBtn {
+  height: 10px;
+}
+
+.hero-section {
+  padding-top: 0em;
+  padding-right: 15em;
+  padding-left: 15em;
+  background: linear-gradient(to bottom, #030213, #09046b);
+  margin-bottom: 0;
+  min-height: 100vh;
+}
+.hero-section .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.hero-section .container .hero-logo img {
+  height: 35em;
+}
+.hero-section .container .hero-description {
+  margin-top: -50px;
+}
+.hero-section .container .hero-description h1 {
+  font-size: 5em;
+  color: white;
+}
+.hero-section .container .hero-description h3 {
+  margin-top: -70px;
+  font-size: 2.3em;
+  color: white;
+  font-weight: 300;
+}
+.hero-section .container .hero-description p {
+  color: white;
+  font-size: 1.2em;
+  margin-top: 0px;
+}
+
+.event-section {
+  background: linear-gradient(to bottom, #09046b, #002f86, #09046b);
+  margin-top: 0;
+  padding: 6em 10em;
+  min-height: 100vh;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+.event-section .container .live-event .Sub-Menu {
+  color: white;
+  font-size: 2.5em;
+  margin-bottom: 2em;
+}
+.event-section .container .video video {
+  border-radius: 10%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: solid rgba(255, 255, 255, 0.5);
+  border-bottom: solid rgba(255, 255, 255, 0.5);
+}
+.event-section .container h2 {
+  font-size: 2em;
+  font-weight: 600;
+}
+.event-section .container h3 {
+  font-size: 1.2em;
+  margin-bottom: -10px;
+  font-weight: 500;
+}
+.event-section .container .keterangan-event {
+  color: white;
+  font-size: 1.2em;
+}
+.event-section .container .event-details-cta {
+  color: white;
+  background: rgba(255, 255, 255, 0.3);
+  height: 3em;
+  width: 6em;
+  font-size: 1em;
+  border: solid 1.5px white;
+  border-radius: 30px;
+  margin-right: 20px;
+  margin-top: 10px;
+  border-bottom: 1.5px solid white;
+  border-left: 1.5px solid white;
+  border-top: none;
+  border-right: none;
+}
+.event-section .container .event-details-cta:hover {
+  background: white;
+  color: #09046b;
+  border: 1.5px solid #000000;
+  transition: 0.5s;
+}
+.event-section .container .daftar-cta {
+  color: white;
+  background: rgba(255, 255, 255, 0.3);
+  height: 3em;
+  width: 6em;
+  font-size: 1em;
+  border-bottom: 1.5px solid white;
+  border-left: 1.5px solid white;
+  border-top: none;
+  border-right: none;
+  border-radius: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.event-section .container .daftar-cta:hover {
+  background: white;
+  color: #09046b;
+  border: 1.5px solid #000000;
+  transition: 0.5s;
+}
+
+.FooterSection {
+  padding: 0em;
+  background: linear-gradient(to bottom, #09046b, #030213);
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+.FooterSection .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.FooterSection .container .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  padding: 1em;
+}
+.FooterSection .container .card .isi-card {
+  width: 17em;
+  height: 17em;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 1em;
+  text-align: center;
+  border-radius: 15px;
+  backdrop-filter: blur(100px);
+  border-bottom: solid 2px white;
+  border-left: solid 2px white;
+}
+.FooterSection .container .card .isi-card .isi-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.FooterSection .container .card .isi-card .logo-lokasi {
+  margin: 4em 0 1em 0;
+}
+.FooterSection .container .card .isi-card .Logo {
+  height: 7.5em;
+}
+.FooterSection .container .card .isi-card h1 {
+  margin-top: 0;
+  font-weight: 400;
+}
+.FooterSection .container .card .isi-card h3 {
+  margin-top: -10px;
+  font-weight: 300;
+}
+.FooterSection .container .card .isi-card .location {
+  height: 4em;
+}
+.FooterSection .container .card .isi-card .sosmed img {
+  height: 4em;
+}
+.FooterSection .container .card .daftar {
+  display: flex;
+}
+.FooterSection .container .card .sosmed {
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 6.5em;
+  height: 7em;
+  margin: 1em;
+  border-radius: 10px;
+  border-bottom: solid white 0.7px;
+  border-left: solid white 0.7px;
+}
+.FooterSection .container .card .sosmed img {
+  padding: 0.5em 4em 0.2em 4em;
+}
+.FooterSection .container .card .sosmed a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  padding-bottom: 0.5em;
+}
+
+.openingEvent {
+  display: flex;
+}
+
+.closingEvent {
+  display: none;
+}
+
+.pop-up-detailEvent {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  width: auto;
+  max-width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+}
+.pop-up-detailEvent .container {
+  margin: 2em;
+  max-width: 26%;
+  height: 70%;
+  padding: 2em 0;
+  background-color: #09046b;
+  border-radius: 30px;
+  border: 4px solid #ffffff;
+}
+.pop-up-detailEvent .container .header-detailEvent {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 2em;
+  padding: 0 2em;
+}
+.pop-up-detailEvent .container .header-detailEvent img {
+  height: 2em;
+}
+.pop-up-detailEvent .container .header-detailEvent img:hover {
+  cursor: pointer;
+}
+.pop-up-detailEvent .container .information {
+  padding: 0 2em;
+  overflow-y: auto;
+  scrollbar-width: none;
+  max-height: 35%;
+}
+.pop-up-detailEvent .container h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 0;
+}
+.pop-up-detailEvent .container .banner-event {
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+}
+.pop-up-detailEvent .container .banner-event img {
+  width: 100%;
+}
+.pop-up-detailEvent .container p {
+  color: white;
+}
+
+.pop-up-detailEvent .container .information-daftar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+.pop-up-detailEvent .container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  background: #09046b;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+.pop-up-detailEvent .container .title {
+  font-size: 20px;
+  color: #a6fff8;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  position: relative;
+  text-align: center;
+}
+.pop-up-detailEvent .container .message,
+.pop-up-detailEvent .container .info1 {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+.pop-up-detailEvent .container .info1 a {
+  color: #a6fff8;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.pop-up-detailEvent .container .info1 a:hover {
+  color: #1ec79a;
+}
+.pop-up-detailEvent .container .form label {
+  position: relative;
+}
+.pop-up-detailEvent .container .form label input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+.pop-up-detailEvent .container input {
+  box-sizing: border-box;
+}
+.pop-up-detailEvent .container .form label input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: #24323d;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+.pop-up-detailEvent .container .form label input:-moz-placeholder + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+.pop-up-detailEvent .container .form label input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+.pop-up-detailEvent .container .form label input:focus + span,
+.pop-up-detailEvent .container .form label input:valid + span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+.pop-up-detailEvent .container .form label input:valid + span {
+  color: rgb(0, 0, 0);
+}
+.pop-up-detailEvent .container select {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  font-family: inherit;
+  color: #1a1a1a;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 16px;
+  cursor: pointer;
+}
+.pop-up-detailEvent .container select:focus {
+  box-shadow: 0 0 0 2px #64f7c9;
+}
+.pop-up-detailEvent .container td:first-child {
+  font: #fff;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 15px;
+  padding-bottom: 8px;
+  vertical-align: top;
+}
+.pop-up-detailEvent .container .submit {
+  border: none;
+  outline: none;
+  background: #a6fff8;
+  padding: 10px;
+  border-radius: 10px;
+  color: #1B1B4D;
+  font-size: 16px;
+  transform: 0.3s ease;
+  cursor: pointer;
+}
+.pop-up-detailEvent .container .submit:hover {
+  background: rgba(166, 255, 248, 0.4117647059);
+  transition: 0.3s;
+}
+
+@media (min-width: 1000px) {
+  .navbar .menu img {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .navbar .nav-kanan {
+    display: none;
+  }
+  .navbar .menu img {
+    display: block;
+  }
+  .hero-section .conntainer {
+    padding-top: 6em;
+  }
+}
+@media (max-width: 1140px) {
+  .hero-section .container {
+    display: grid;
+    padding-top: 6em;
+    height: 100%;
+    padding-bottom: 8em;
+  }
+  .hero-section .container .hero-logo {
+    display: flex;
+    justify-content: center;
+  }
+  .hero-section .container .hero-logo img {
+    height: 30em;
+  }
+  .hero-section .container .hero-description {
+    text-align: center;
+  }
+  .hero-section .container .hero-description h1 {
+    font-size: 4em;
+  }
+  .hero-section .container .hero-description h3 {
+    font-size: 1.5em;
+    margin-top: -50px;
+  }
+  .hero-section .container .hero-description p {
+    font-size: 1em;
+  }
+  .FooterSection {
+    width: 100%;
+    display: flex;
+  }
+  .FooterSection .container {
+    padding-top: 5em;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 900px) {
+  .video video {
+    height: 200px;
+  }
+  .event-section {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .event-section {
+    padding: 0;
+    min-height: 0;
+  }
+  .navbar .conntainer {
+    padding-bottom: 0;
+  }
+  .hero-section {
+    min-height: 0;
+    padding: 3em 0;
+  }
+  .hero-section .container {
+    display: grid;
+    padding-top: 3em;
+    height: 100%;
+    padding-bottom: 8em;
+    margin: 0;
+  }
+  .hero-section .container .hero-logo {
+    display: flex;
+    justify-content: center;
+  }
+  .hero-section .container .hero-logo img {
+    height: 20em;
+  }
+  .hero-section .container .hero-description {
+    text-align: center;
+  }
+  .hero-section .container .hero-description h1 {
+    font-size: 3em;
+  }
+  .hero-section .container .hero-description h3 {
+    font-size: 1em;
+    margin-top: -20px;
+  }
+  .hero-section .container .hero-description p {
+    font-size: 0.5em;
+  }
+  .navbar .container {
+    padding: 0 1em;
+  }
+  .event-section {
+    padding-top: 6em;
+  }
+}
+@media (max-width: 400px) {
+  .FooterSection .container .card .isi-card {
+    width: 15em;
+    height: 15em;
+  }
+  .FooterSection .container .card .sosmed {
+    width: 5.5em;
+    height: 6em;
+  }
+}/*# sourceMappingURL=main.css.map */
